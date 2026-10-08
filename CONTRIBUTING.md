@@ -50,19 +50,41 @@ If you encounter difficulties with these guidelines, get in touch with the team!
 ### Copyright and license headers
 
 Although the repository includes a [LICENSE](https://github.com/openhwfoundation/cva6/blob/master/LICENSE) file,
-it is important to  include appropriate copyright and license headers in code files, as they can be used out of the repository.
+it is essential to include appropriate copyright and license headers in individual files, as they can be copied and used outside of the repository context.
 
-When contributing:
-- Add a copyright and license header to new files, and to updated files that do not yet have one.
-- Don't change the license (usually Solderpad 0.51) to another license.
-- Don't remove or replace the existing copyright holders.
-- You can add your organisation as an additional copyright holder, when you perform significant changes to a file (new feature, performance increase...)
+When contributing, please adhere to these rules:
+- **Add headers**: Include a copyright and license header in all new files, as well as in updated files that currently lack one.
+- **Do not alter licenses**: Never change an existing license (for instance, changing Solderpad 0.51 to another license).
+- **Preserve copyright history**: Do not remove or replace existing copyright owners. 
+- You may add additional copyright owners (typically your company or university) when you contribute significant changes, such as a major feature or a substantial performance increase.
+- In the copyright line, specify the year when the copyright was added with the `20xx` format. Do not update this year for subsequent modifications.
 
-An ``SPDX-License-Identifier`` tag in the header is recommended as it is used by automated tools.
+Note: The copyright owner of your work is legally your employer or university in most contexts.
 
-We plan to automate the verification of headers in pull requests.
+Here is a Solderpad 0.51 file header, wrapped to 100 characters according to lowRISC SystemVerilog coding style:
 
-Detailed information can be found in the [Eclipse Foundation Project Handbook](https://www.eclipse.org/projects/handbook/#ip-copyright-headers).
+```
+// Copyright [year] [name of copyright owner]
+//
+// SPDX-License-Identifier: Apache-2.0 WITH SHL-2.1
+//
+// Copyright and related rights are licensed under the Solderpad Hardware License, Version 0.51
+// (the "License"); you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at http://solderpad.org/licenses/SHL-0.51.
+// Unless required by applicable law or agreed to in writing, software, hardware and materials
+// distributed under this License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+// CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language
+// governing permissions and limitations under the License.
+//
+// Contributors:
+//   [name of the author], [their organisation] - Original Author
+```
+
+For files governed by other licenses, you should refer to the headers recommended by the respective license promoters. Ensure that an `SPDX-License-Identifier` is included for automated parsers.
+
+Detailed information about intellectual property and headers can be found in the [Eclipse Foundation Project Handbook](https://www.eclipse.org/projects/handbook/#ip-copyright-headers).
+
+If you have questions about licenses and headers, get in touch with the project team!
 
 ### Bug fixing
 
